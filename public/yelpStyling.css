@@ -1,0 +1,33 @@
+body {
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10% !important;
+  grid-template-rows: auto auto 40% !important;
+  grid-column-gap: 10px;
+  grid-template-areas:
+    'bar bar bar bar'
+    ' . hrMap header . '
+    ' . main sidebar  . ';
+}
+
+#topBar {
+  grid-area: bar;
+}
+
+#map {
+  grid-area: hrMap;
+  height: 300px;
+  width: 315px;
+  display: flex;
+  justify-content: center;
+}
+#root {
+  grid-area: header;
+}
+
+#restaurantInfoApp {
+  grid-area: sidebar !important;
+}
+
+#app {
+  grid-area: main;
+}
