@@ -22,7 +22,14 @@ router.all('/:id/images*', (req, res) => {
   res.redirect(307, `http://18.188.153.185:80${req.url}`);
 });
 
+app.get('/businesses/:id/restaurantInfo', function(req, res) {
+  // res.redirect(`http://127.0.0.1:3002/restaurantInfo-service/${req.params.id}`);
+  res.redirect(
+    `http://35.183.134.103:80/restaurantInfo-service/${req.params.id}`,
+  );
+});
+
 app.listen(port, () => {
   console.log(' we listening for things on the proxy');
-  console.log(__dirname);
+  // console.log(url);
 });
