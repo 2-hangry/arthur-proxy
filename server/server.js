@@ -11,15 +11,15 @@ app.use('/api/businesses/', router);
 app.use(cors());
 
 router.all('/:id/restaurantInfo*', (req, res) => {
-  res.redirect(307, `http://localhost:3002${req.url}`);
+  res.redirect(307, `http://35.183.134.103:80${req.url}`);
 });
 
 router.all('/:id/reviews*', (req, res) => {
-  res.redirect(307, `http://localhost:8080${req.url}`);
+  res.redirect(307, `http://18.206.196.154:80${req.url}`);
 });
 
 router.all('/:id/images*', (req, res) => {
-  res.redirect(307, `http://localhost:3000${req.url}`);
+  res.redirect(307, `http://18.188.153.185:80${req.url}`);
 });
 
 app.listen(port, () => {

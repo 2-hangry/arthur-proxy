@@ -1,5 +1,5 @@
-node_modules
 
 # ignore individual components
 ZELP-reviews-module 
 photos-carousel
+node_modules
