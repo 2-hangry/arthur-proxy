@@ -15,7 +15,7 @@ router.all('/:id/restaurantInfo*', (req, res) => {
 });
 
 router.all('/:id/reviews*', (req, res) => {
-  res.redirect(307, `http://18.206.196.154:80${req.url}`);
+  res.redirect(307, `http://52.55.139.226:80${req.url}`);
 });
 
 router.all('/:id/images*', (req, res) => {
